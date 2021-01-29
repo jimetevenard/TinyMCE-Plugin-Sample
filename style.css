@@ -1,0 +1,27 @@
+/**
+ * TinyMCE Plugin Sample (c) by Jim Etevenard
+ *
+ *  TinyMCE Plugin Sample is licensed under a
+ *  Creative Commons Attribution-ShareAlike 4.0 International License.
+ *
+ *  You should have received a copy of the license along with this
+ *  work.  If not, see <http://creativecommons.org/licenses/by-sa/4.0/>. 
+*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: teal;
+}
+main {
+    background-color: white;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 800px;
+}
+h1 {
+    font-size: 1.6em;
+    color: rgb(0, 58, 0);
+}
+h2 {
+    font-size: 1.2em;
+    color: darkgreen;
+}

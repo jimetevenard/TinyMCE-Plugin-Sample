@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyMCE Plugin Sample - Jim ETEVNARD</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- TinyMCE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.9.11/tinymce.min.js" integrity="sha512-3tlegnpoIDTv9JHc9yJO8wnkrIkq7WO7QJLi5YfaeTmZHvfrb1twMwqT4C0K8BLBbaiR6MOo77pLXO1/PztcLg==" crossorigin="anonymous"></script>
+
+    <!-- My Darkmode plugin -->
+    <script src="darkmode.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>👍 TinyMCE Plugin Sample 🌞</h1>
+
+        <h2>
+            A minimal "dark-mode" plugin for TinyMCE 4.x
+        </h2>
+
+        <p>
+            This plugin adds a button to toogle a very minimal dark-mode.</br>
+            It is meant to learn how TinyMCE plugin works.
+        </p>
+
+        <p>
+            See <a href="https://www.tiny.cloud/docs-4x/api/tinymce/tinymce.editor/">the full TinyMCE reference</a>
+        </p>
+
+        <textarea id="mytextarea">
+            <h1>
+                Hi !
+            </h1>
+            <p>
+                Click the <em>moon-shaped</em> button above to try our dark mode !
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla, ante in tempor dapibus, mauris urna accumsan felis, non pretium sem tortor sed justo.
+            </p>
+        </textarea>
+    </main>
+    <script>
+        /**
+            Init TinyMCE aroud the textarea.
+
+            See : https://www.tiny.cloud/docs-4x/quick-start/#step2initializetinymceaspartofawebform
+        */
+        tinymce.init({
+            selector: "#mytextarea",
+            plugins: 'my_plugin_darkmode',
+            toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | darkmode',
+            menubar: false,
+            height : "300"
+        });
+    </script>
+</body>
+
+</html>
