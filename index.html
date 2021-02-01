@@ -20,6 +20,8 @@
 
     <!-- My Darkmode plugin -->
     <script src="darkmode.js"></script>
+
+    <!-- See also the <script> block at the end of the <body> -->
 </head>
 
 <body>
@@ -58,8 +60,11 @@
     <script>
         /**
             Init TinyMCE aroud the textarea.
-
             See : https://www.tiny.cloud/docs-4x/quick-start/#step2initializetinymceaspartofawebform
+
+            This script is at the end of <body>, it's on purpose :
+            It will be run when the DOM is loaded.
+            (The <textarea> will exist at this time)
         */
         tinymce.init({
             selector: "#mytextarea",
