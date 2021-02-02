@@ -32,7 +32,7 @@ tinymce.PluginManager.add('my_plugin_darkmode', function (editor) {
 
     // Button definition.
     // The id "darkmode" allows adding it to the toolbar (See init at index.html)
-    editor.addButton("darkmode", {
+    editor.addButton('darkmode', {
         icon: 'moon',
         tooltip: 'Dark mode',
         onclick: function () {
